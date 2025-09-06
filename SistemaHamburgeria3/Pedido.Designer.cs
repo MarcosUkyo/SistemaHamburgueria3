@@ -1,4 +1,4 @@
-﻿namespace SistemaHamburgeria3
+﻿namespace SistemaPizzaria2
 {
     partial class Pedido
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCodPedido = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtPesquisar = new System.Windows.Forms.Label();
             this.txtCodPesquisar = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
@@ -52,14 +52,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtCodPedido
+            // txtCodigo
             // 
-            this.txtCodPedido.Location = new System.Drawing.Point(223, 174);
-            this.txtCodPedido.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCodPedido.Name = "txtCodPedido";
-            this.txtCodPedido.ReadOnly = true;
-            this.txtCodPedido.Size = new System.Drawing.Size(192, 20);
-            this.txtCodPedido.TabIndex = 49;
+            this.txtCodigo.Location = new System.Drawing.Point(223, 174);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.ReadOnly = true;
+            this.txtCodigo.Size = new System.Drawing.Size(192, 20);
+            this.txtCodigo.TabIndex = 49;
             // 
             // txtPesquisar
             // 
@@ -258,7 +258,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtCodPedido);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.txtCodPesquisar);
             this.Controls.Add(this.btnSair);
@@ -286,7 +286,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtCodPedido;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label txtPesquisar;
         private System.Windows.Forms.TextBox txtCodPesquisar;
         private System.Windows.Forms.Button btnSair;

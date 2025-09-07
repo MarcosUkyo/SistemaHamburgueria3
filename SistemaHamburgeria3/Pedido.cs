@@ -1,12 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaPizzaria2
@@ -22,59 +16,184 @@ namespace SistemaPizzaria2
             InitializeComponent();
         }
 
-        private void btnNovo_Click(object sender, EventArgs e)
+        private void btnNovo_Click_1(object sender, EventArgs e)
         {
-            chkBorda.Checked = false;
-            chkCatupiry.Checked = false;
+            chkBacon.Checked = false;
+            chkPicles.Checked = false;
             chkCebola.Checked = false;
-            chkTempero.Checked = false;
+            chkBarbecue.Checked = false;
+            chkMaionese.Checked = false;
 
             txtValorOpcionais.Clear();
             txtValorPizza.Clear();
             txtValorPagar.Clear();
             cmbTamanhoPizza.SelectedIndex = 0;
-
         }
 
-        private void Pedido_Load(object sender, EventArgs e)
+        private void grpBebidas_Enter(object sender, EventArgs e)
         {
-            cmbTamanhoPizza.Items.Add("Pequena- R$ 20,00");
-            cmbTamanhoPizza.Items.Add("Média- R$ 30,00");
-            cmbTamanhoPizza.Items.Add("Grande- R$ 50,00");
+            chkCoca.Checked = false;
+            chkGuarana.Checked = false;
+            chkSucoUva.Checked = false;
+            chkSucoLaranja.Checked = false;
+            chkEnergetico.Checked = false;
+
+            txtValorOpcionais.Clear();
+            txtValorPizza.Clear();
+            txtValorPagar.Clear();
+            cmbTamanhoPizza.SelectedIndex = 0;
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void grpAcompanhamento_Enter(object sender, EventArgs e)
+        {
+            chkBatataFrita.Checked = false;
+            chkOnion.Checked = false;
+            chkNuggets.Checked = false;
+            chkSalada.Checked = false;
+            chkBatataRustica.Checked = false;
+
+            txtValorOpcionais.Clear();
+            txtValorPizza.Clear();
+            txtValorPagar.Clear();
+            cmbTamanhoPizza.SelectedIndex = 0;
+        }
+
+        private void grpShakes_Enter(object sender, EventArgs e)
+        {
+            chkShakeChocolate.Checked = false;
+            chkShakeMorango.Checked = false;
+            chkSorveteBaunilha.Checked = false;
+            chkSorveteChocolate.Checked = false;
+            chkSundae.Checked = false;
+
+            txtValorOpcionais.Clear();
+            txtValorPizza.Clear();
+            txtValorPagar.Clear();
+            cmbTamanhoPizza.SelectedIndex = 0;
+        }
+
+        //MÉTODO QUE VAI CARREGAR AS INFORMAÇÕES NO DATAGRID
+        private void Pedido_Load_1(object sender, EventArgs e)
+        {
+            cmbTamanhoPizza.Items.Add("Normal- R$ 6,00");
+            cmbTamanhoPizza.Items.Add("X-Salada - R$ 10,00");
+            cmbTamanhoPizza.Items.Add("Carne Dupla R$ 12,00");
+            cmbTamanhoPizza.Items.Add("Carne Dupla Gourmet - R$ 22,00");
+            cmbTamanhoPizza.Items.Add("X-Tudo - R$ 25,00");
+        }
+
+        private void btnCalcular_Click_1(object sender, EventArgs e)
         {
             //DECLARANDO AS VARIAVEIS
             double valorPizza = 0, valorOpcao = 0, valorTotal = 0;
 
             if (cmbTamanhoPizza.SelectedIndex == 0)
             {
-                valorPizza = 20;
+                valorPizza = 6;
             }
             else if (cmbTamanhoPizza.SelectedIndex == 1)
             {
-                valorPizza = 30;
+                valorPizza = 10;
             }
             else if (cmbTamanhoPizza.SelectedIndex == 2)
             {
-                valorPizza = 50;
+                valorPizza = 12;
             }
-            if (chkBorda.Checked == true)
+            else if (cmbTamanhoPizza.SelectedIndex == 3)
             {
-                valorOpcao = valorOpcao + 5;
+                valorPizza = 22;
             }
-            if (chkTempero.Checked == true)
+            else if (cmbTamanhoPizza.SelectedIndex == 4)
             {
-                valorOpcao = valorOpcao + 6;
+                valorPizza = 25;
+            }
+
+            //OPCIONAIS
+            if (chkBacon.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            if (chkBarbecue.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
             }
             if (chkCebola.Checked == true)
             {
+                valorOpcao = valorOpcao + 5;
+            }
+            if (chkPicles.Checked == true)
+            {
                 valorOpcao = valorOpcao + 3;
             }
-            if (chkCatupiry.Checked == true)
+            if (chkMaionese.Checked == true)
+            {
+                valorOpcao = valorOpcao + 2;
+            }
+
+            //BEBIDAS
+            if (chkCoca.Checked == true)
+            {
+                valorOpcao = valorOpcao + 5;
+            }
+            if (chkGuarana.Checked == true)
+            {
+                valorOpcao = valorOpcao + 5;
+            }
+            if (chkSucoUva.Checked == true)
             {
                 valorOpcao = valorOpcao + 4;
+            }
+            if (chkSucoLaranja.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            if (chkEnergetico.Checked == true)
+            {
+                valorOpcao = valorOpcao + 7;
+            }
+
+            //ACOMPANHAMENTO
+            if (chkBatataFrita.Checked == true)
+            {
+                valorOpcao = valorOpcao + 5;
+            }
+            if (chkOnion.Checked == true)
+            {
+                valorOpcao = valorOpcao + 6;
+            }
+            if (chkNuggets.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            if (chkSalada.Checked == true)
+            {
+                valorOpcao = valorOpcao + 3;
+            }
+            if (chkBatataRustica.Checked == true)
+            {
+                valorOpcao = valorOpcao + 12;
+            }
+
+            //SHAKES
+            if (chkShakeChocolate.Checked == true)
+            {
+                valorOpcao = valorOpcao + 13;
+            }
+            if (chkShakeMorango.Checked == true)
+            {
+                valorOpcao = valorOpcao + 13;
+            }
+            if (chkSorveteBaunilha.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            if (chkSorveteChocolate.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            if (chkSundae.Checked == true)
+            {
+                valorOpcao = valorOpcao + 8;
             }
             else
             {
@@ -91,13 +210,13 @@ namespace SistemaPizzaria2
             cmbTamanhoPizza.SelectedIndex = -1;
             txtValorPizza.Clear();
             txtValorOpcionais.Clear();
-            chkBorda.Checked = false;
-            chkCatupiry.Checked = false;
+            chkBacon.Checked = false;
+            chkPicles.Checked = false;
             chkCebola.Checked = false;
-            chkTempero.Checked = false;
+            chkBarbecue.Checked = false;
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void btnSalvar_Click_1(object sender, EventArgs e)
         {
             //vefifica os campos
             if (txtValorPizza.Text == "")
@@ -145,12 +264,11 @@ namespace SistemaPizzaria2
             }
         }
 
-        private void dgvPedido_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void dgvPedido_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
             CarregarPedidos();
         }
 
-        //MÉTODO QUE VAI CARREGAR AS INFORMAÇÕES NO DATAGRID
         public void CarregarPedidos()
         {
             try
@@ -169,7 +287,7 @@ namespace SistemaPizzaria2
 
         }
 
-        private void txtPesquisar_TextChanged(object sender, EventArgs e)
+        private void txtCodPesquisar_TextChanged(object sender, EventArgs e)
         {
             if (txtPesquisar.Text != "")
             {
@@ -199,7 +317,7 @@ namespace SistemaPizzaria2
             }
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void btnSair_Click_1(object sender, EventArgs e)
         {
             DialogResult sair = MessageBox.Show("Deseja sair ?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (sair == DialogResult.No)
@@ -213,5 +331,6 @@ namespace SistemaPizzaria2
                 Application.Exit();
             }
         }
+
     }
 }

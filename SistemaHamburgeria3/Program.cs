@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using SistemaPizzaria2;
+using System;
 using System.Windows.Forms;
 
 namespace SistemaHamburgeria3
@@ -16,7 +14,7 @@ namespace SistemaHamburgeria3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Pedido());
         }
     }
 }

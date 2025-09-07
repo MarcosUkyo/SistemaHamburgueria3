@@ -18,6 +18,7 @@ namespace SistemaPizzaria2
 
         private void btnNovo_Click_1(object sender, EventArgs e)
         {
+            //ESCOLHAS OPCIONAIS
             chkBacon.Checked = false;
             chkPicles.Checked = false;
             chkCebola.Checked = false;
@@ -28,48 +29,27 @@ namespace SistemaPizzaria2
             txtValorPizza.Clear();
             txtValorPagar.Clear();
             cmbTamanhoPizza.SelectedIndex = 0;
-        }
 
-        private void grpBebidas_Enter(object sender, EventArgs e)
-        {
+            //BEBIDAS
             chkCoca.Checked = false;
             chkGuarana.Checked = false;
             chkSucoUva.Checked = false;
             chkSucoLaranja.Checked = false;
             chkEnergetico.Checked = false;
 
-            txtValorOpcionais.Clear();
-            txtValorPizza.Clear();
-            txtValorPagar.Clear();
-            cmbTamanhoPizza.SelectedIndex = 0;
-        }
-
-        private void grpAcompanhamento_Enter(object sender, EventArgs e)
-        {
+            //ACOMPANHAMENTO
             chkBatataFrita.Checked = false;
             chkOnion.Checked = false;
             chkNuggets.Checked = false;
             chkSalada.Checked = false;
             chkBatataRustica.Checked = false;
 
-            txtValorOpcionais.Clear();
-            txtValorPizza.Clear();
-            txtValorPagar.Clear();
-            cmbTamanhoPizza.SelectedIndex = 0;
-        }
-
-        private void grpShakes_Enter(object sender, EventArgs e)
-        {
+            //SORVETES E SHAKES
             chkShakeChocolate.Checked = false;
             chkShakeMorango.Checked = false;
             chkSorveteBaunilha.Checked = false;
             chkSorveteChocolate.Checked = false;
             chkSundae.Checked = false;
-
-            txtValorOpcionais.Clear();
-            txtValorPizza.Clear();
-            txtValorPagar.Clear();
-            cmbTamanhoPizza.SelectedIndex = 0;
         }
 
         //MÉTODO QUE VAI CARREGAR AS INFORMAÇÕES NO DATAGRID
@@ -78,6 +58,7 @@ namespace SistemaPizzaria2
             cmbTamanhoPizza.Items.Add("Normal- R$ 6,00");
             cmbTamanhoPizza.Items.Add("X-Salada - R$ 10,00");
             cmbTamanhoPizza.Items.Add("Carne Dupla R$ 12,00");
+            cmbTamanhoPizza.Items.Add("X-Bacon - R$ 16,00");
             cmbTamanhoPizza.Items.Add("Carne Dupla Gourmet - R$ 22,00");
             cmbTamanhoPizza.Items.Add("X-Tudo - R$ 25,00");
         }
@@ -101,9 +82,13 @@ namespace SistemaPizzaria2
             }
             else if (cmbTamanhoPizza.SelectedIndex == 3)
             {
-                valorPizza = 22;
+                valorPizza = 16;
             }
             else if (cmbTamanhoPizza.SelectedIndex == 4)
+            {
+                valorPizza = 22;
+            }
+            else if (cmbTamanhoPizza.SelectedIndex == 5)
             {
                 valorPizza = 25;
             }
@@ -331,6 +316,21 @@ namespace SistemaPizzaria2
                 Application.Exit();
             }
         }
+        private void grpBebidas_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpAcompanhamento_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpShakes_Enter(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

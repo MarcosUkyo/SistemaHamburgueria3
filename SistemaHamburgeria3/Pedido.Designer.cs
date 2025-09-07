@@ -77,7 +77,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(392, 163);
+            this.txtCodigo.Location = new System.Drawing.Point(410, 165);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
@@ -87,16 +87,17 @@
             // txtPesquisar
             // 
             this.txtPesquisar.AutoSize = true;
-            this.txtPesquisar.Location = new System.Drawing.Point(616, 166);
+            this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisar.Location = new System.Drawing.Point(614, 168);
             this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(69, 13);
+            this.txtPesquisar.Size = new System.Drawing.Size(78, 13);
             this.txtPesquisar.TabIndex = 48;
             this.txtPesquisar.Text = "PESQUISAR";
             // 
             // txtCodPesquisar
             // 
-            this.txtCodPesquisar.Location = new System.Drawing.Point(689, 162);
+            this.txtCodPesquisar.Location = new System.Drawing.Point(708, 165);
             this.txtCodPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodPesquisar.Name = "txtCodPesquisar";
             this.txtCodPesquisar.Size = new System.Drawing.Size(192, 20);
@@ -105,40 +106,49 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(802, 407);
+            this.btnSair.BackColor = System.Drawing.Color.Red;
+            this.btnSair.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSair.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSair.Location = new System.Drawing.Point(800, 409);
             this.btnSair.Margin = new System.Windows.Forms.Padding(2);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(116, 54);
             this.btnSair.TabIndex = 46;
             this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(638, 407);
+            this.btnCalcular.BackColor = System.Drawing.Color.Chocolate;
+            this.btnCalcular.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCalcular.ForeColor = System.Drawing.Color.Gold;
+            this.btnCalcular.Location = new System.Drawing.Point(636, 409);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(116, 54);
             this.btnCalcular.TabIndex = 45;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(478, 407);
+            this.btnSalvar.BackColor = System.Drawing.Color.Chocolate;
+            this.btnSalvar.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSalvar.ForeColor = System.Drawing.Color.Gold;
+            this.btnSalvar.Location = new System.Drawing.Point(476, 409);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(116, 54);
             this.btnSalvar.TabIndex = 44;
             this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // txtValorOpcionais
             // 
-            this.txtValorOpcionais.Location = new System.Drawing.Point(552, 81);
+            this.txtValorOpcionais.Location = new System.Drawing.Point(571, 83);
             this.txtValorOpcionais.Margin = new System.Windows.Forms.Padding(2);
             this.txtValorOpcionais.Name = "txtValorOpcionais";
             this.txtValorOpcionais.Size = new System.Drawing.Size(85, 20);
@@ -146,7 +156,7 @@
             // 
             // txtValorPagar
             // 
-            this.txtValorPagar.Location = new System.Drawing.Point(689, 81);
+            this.txtValorPagar.Location = new System.Drawing.Point(742, 83);
             this.txtValorPagar.Margin = new System.Windows.Forms.Padding(2);
             this.txtValorPagar.Name = "txtValorPagar";
             this.txtValorPagar.Size = new System.Drawing.Size(85, 20);
@@ -155,26 +165,28 @@
             // lblValorPagar
             // 
             this.lblValorPagar.AutoSize = true;
-            this.lblValorPagar.Location = new System.Drawing.Point(686, 55);
+            this.lblValorPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorPagar.Location = new System.Drawing.Point(739, 57);
             this.lblValorPagar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValorPagar.Name = "lblValorPagar";
-            this.lblValorPagar.Size = new System.Drawing.Size(93, 13);
+            this.lblValorPagar.Size = new System.Drawing.Size(106, 13);
             this.lblValorPagar.TabIndex = 41;
             this.lblValorPagar.Text = "VALOR A PAGAR";
             // 
             // lblValorOpcionais
             // 
             this.lblValorOpcionais.AutoSize = true;
-            this.lblValorOpcionais.Location = new System.Drawing.Point(549, 55);
+            this.lblValorOpcionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorOpcionais.Location = new System.Drawing.Point(568, 57);
             this.lblValorOpcionais.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValorOpcionais.Name = "lblValorOpcionais";
-            this.lblValorOpcionais.Size = new System.Drawing.Size(130, 13);
+            this.lblValorOpcionais.Size = new System.Drawing.Size(149, 13);
             this.lblValorOpcionais.TabIndex = 40;
             this.lblValorOpcionais.Text = "VALOR DOS OPCIONAIS";
             // 
             // txtValorPizza
             // 
-            this.txtValorPizza.Location = new System.Drawing.Point(412, 81);
+            this.txtValorPizza.Location = new System.Drawing.Point(410, 82);
             this.txtValorPizza.Margin = new System.Windows.Forms.Padding(2);
             this.txtValorPizza.Name = "txtValorPizza";
             this.txtValorPizza.Size = new System.Drawing.Size(102, 20);
@@ -187,7 +199,7 @@
             this.grpOpcionais.Controls.Add(this.chkPicles);
             this.grpOpcionais.Controls.Add(this.chkCebola);
             this.grpOpcionais.Controls.Add(this.chkBacon);
-            this.grpOpcionais.Location = new System.Drawing.Point(11, 143);
+            this.grpOpcionais.Location = new System.Drawing.Point(9, 145);
             this.grpOpcionais.Margin = new System.Windows.Forms.Padding(2);
             this.grpOpcionais.Name = "grpOpcionais";
             this.grpOpcionais.Padding = new System.Windows.Forms.Padding(2);
@@ -255,17 +267,18 @@
             // lblValorPizza
             // 
             this.lblValorPizza.AutoSize = true;
-            this.lblValorPizza.Location = new System.Drawing.Point(391, 55);
+            this.lblValorPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorPizza.Location = new System.Drawing.Point(389, 57);
             this.lblValorPizza.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValorPizza.Name = "lblValorPizza";
-            this.lblValorPizza.Size = new System.Drawing.Size(142, 13);
+            this.lblValorPizza.Size = new System.Drawing.Size(162, 13);
             this.lblValorPizza.TabIndex = 37;
-            this.lblValorPizza.Text = "VALOR DA HAMBÚRGUER";
+            this.lblValorPizza.Text = "VALOR DO HAMBÚRGUER";
             // 
             // dgvPedido
             // 
             this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedido.Location = new System.Drawing.Point(341, 216);
+            this.dgvPedido.Location = new System.Drawing.Point(339, 218);
             this.dgvPedido.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPedido.Name = "dgvPedido";
             this.dgvPedido.RowHeadersWidth = 51;
@@ -277,22 +290,25 @@
             // cmbTamanhoPizza
             // 
             this.cmbTamanhoPizza.FormattingEnabled = true;
-            this.cmbTamanhoPizza.Location = new System.Drawing.Point(50, 80);
+            this.cmbTamanhoPizza.Location = new System.Drawing.Point(48, 82);
             this.cmbTamanhoPizza.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTamanhoPizza.Name = "cmbTamanhoPizza";
             this.cmbTamanhoPizza.Size = new System.Drawing.Size(191, 21);
             this.cmbTamanhoPizza.TabIndex = 35;
-            this.cmbTamanhoPizza.Text = "TAMANHO DO HAMBÚRGUER";
+            this.cmbTamanhoPizza.Text = "CARDÁPIO DOS HAMBÚRGUERS";
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(317, 407);
+            this.btnNovo.BackColor = System.Drawing.Color.Chocolate;
+            this.btnNovo.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.ForeColor = System.Drawing.Color.Gold;
+            this.btnNovo.Location = new System.Drawing.Point(315, 409);
             this.btnNovo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(116, 54);
             this.btnNovo.TabIndex = 34;
             this.btnNovo.Text = "Novo";
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click_1);
             // 
             // grpBebidas
@@ -302,7 +318,7 @@
             this.grpBebidas.Controls.Add(this.chkSucoLaranja);
             this.grpBebidas.Controls.Add(this.chkGuarana);
             this.grpBebidas.Controls.Add(this.chkCoca);
-            this.grpBebidas.Location = new System.Drawing.Point(153, 143);
+            this.grpBebidas.Location = new System.Drawing.Point(151, 145);
             this.grpBebidas.Margin = new System.Windows.Forms.Padding(2);
             this.grpBebidas.Name = "grpBebidas";
             this.grpBebidas.Padding = new System.Windows.Forms.Padding(2);
@@ -374,7 +390,7 @@
             this.grpAcompanhamento.Controls.Add(this.chkNuggets);
             this.grpAcompanhamento.Controls.Add(this.chkOnion);
             this.grpAcompanhamento.Controls.Add(this.chkBatataFrita);
-            this.grpAcompanhamento.Location = new System.Drawing.Point(11, 315);
+            this.grpAcompanhamento.Location = new System.Drawing.Point(9, 317);
             this.grpAcompanhamento.Margin = new System.Windows.Forms.Padding(2);
             this.grpAcompanhamento.Name = "grpAcompanhamento";
             this.grpAcompanhamento.Padding = new System.Windows.Forms.Padding(2);
@@ -446,7 +462,7 @@
             this.grpShakes.Controls.Add(this.chkSorveteBaunilha);
             this.grpShakes.Controls.Add(this.chkShakeMorango);
             this.grpShakes.Controls.Add(this.chkShakeChocolate);
-            this.grpShakes.Location = new System.Drawing.Point(153, 315);
+            this.grpShakes.Location = new System.Drawing.Point(151, 317);
             this.grpShakes.Margin = new System.Windows.Forms.Padding(2);
             this.grpShakes.Name = "grpShakes";
             this.grpShakes.Padding = new System.Windows.Forms.Padding(2);
@@ -514,18 +530,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(338, 165);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(336, 167);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 50;
             this.label1.Text = "CÓDIGO";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 487);
+            this.BackgroundImage = global::SistemaHamburgeria3.Properties.Resources._34fafcb8_6fd2_4470_86ce_b89322847a13;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(987, 564);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grpShakes);
             this.Controls.Add(this.grpAcompanhamento);

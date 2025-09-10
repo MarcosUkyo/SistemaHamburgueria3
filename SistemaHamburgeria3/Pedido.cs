@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using SistemaHamburgeria3;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -304,17 +305,9 @@ namespace SistemaPizzaria2
 
         private void btnSair_Click_1(object sender, EventArgs e)
         {
-            DialogResult sair = MessageBox.Show("Deseja sair ?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (sair == DialogResult.No)
-            {
-                Pedido ped = new Pedido();
-                ped.Show();
-                this.Hide();
-            }
-            else
-            {
-                Application.Exit();
-            }
+            frmMenu menu = new frmMenu();
+            menu.Show();
+            this.Close();
         }
         private void grpBebidas_Enter(object sender, EventArgs e)
         {

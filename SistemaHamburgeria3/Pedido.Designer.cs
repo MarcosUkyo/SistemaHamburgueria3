@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedido));
             this.lblValorPizza = new System.Windows.Forms.Label();
             this.txtCodPesquisar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -608,7 +609,9 @@
             this.Controls.Add(this.cmbTamanhoPizza);
             this.Controls.Add(this.btnNovo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";
             this.Load += new System.EventHandler(this.Pedido_Load_1);
             this.grpOpcionais.ResumeLayout(false);
